@@ -16,7 +16,10 @@ const UserLogin = () => {
     const payloads = { password, email };
 
     await axios
-      .post("http://localhost:4000/api/user/login", payloads)
+      .post(
+        "https://nodejsday5-passwordresettask.onrender.com/api/user/login",
+        payloads
+      )
       .then((res) => {
         setResponseMsg(res.data.message);
         setToken(res.data.token);
