@@ -13,25 +13,24 @@ const ResetPassword = () => {
     const payload = { email };
 
     await axios
-  .post("http://localhost:4000/api/user/reset-password", payload)
-  .then((res) => {
-    setResponseMsg(res.data.message);
-    toast.success("reset password link sent to your mailid Successfully", {
-      position: "top-right",
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-  })
-  .catch((err) => {
-    console.log(err);
-    setResponseMsg("Failed to send reset email");
-  });
-}
-
+      .post("http://localhost:4000/api/user/reset-password", payload)
+      .then((res) => {
+        setResponseMsg(res.data.message);
+        toast.success("reset password link sent to your mailid Successfully", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        setResponseMsg("Failed to send reset email");
+      });
+  };
 
   return (
     <div>
@@ -47,7 +46,7 @@ const ResetPassword = () => {
           borderRadius: "8px",
           padding: "60px",
           boxSizing: "border-box",
-          backgroundColor: "green",
+          backgroundColor: "ef476f",
           margin: "0 auto",
           marginTop: "50px",
           width: "100%",
@@ -70,7 +69,7 @@ const ResetPassword = () => {
           style={{
             marginTop: "24px",
             width: "200px",
-            backgroundColor: "black",
+            backgroundColor: "073b4c",
             margin: "20px",
           }}
         >

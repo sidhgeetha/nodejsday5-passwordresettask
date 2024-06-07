@@ -1,11 +1,8 @@
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-
 
 const SetNewPassword = () => {
   const [newPassword, setNewPassword] = useState("");
@@ -72,7 +69,7 @@ const SetNewPassword = () => {
           borderRadius: "8px",
           padding: "60px",
           boxSizing: "border-box",
-          backgroundColor: "green",
+          backgroundColor: "ef476f",
           margin: "0 auto",
           marginTop: "100px",
           width: "90%",
@@ -107,7 +104,7 @@ const SetNewPassword = () => {
           style={{
             marginTop: "24px",
             width: "100px",
-            backgroundColor: "black",
+            backgroundColor: "073b4c",
             margin: "20px",
           }}
         >
