@@ -8,7 +8,11 @@ import SetnewPassword from "../Components/SetnewPassword";
 
 const router = createBrowserRouter([
   {
-    path: ["/", "/login"],
+    path: "/",
+    element: <UserLogin />,
+  },
+  {
+    path: "/login",
     element: <UserLogin />,
   },
   {
