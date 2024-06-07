@@ -15,8 +15,6 @@ const UserLogin = () => {
     console.log("login api payloads", password, email);
     const payloads = { password, email };
 
-   
-
     await axios
       .post("http://localhost:4000/api/user/login", payloads)
       .then((res) => {
@@ -115,11 +113,13 @@ const UserLogin = () => {
           >
             Forgot Password?
           </Link>
+          <Link to="/register" style={{ margin: "20px", color: "yellow" }}>
+            New User? Register
+          </Link>
         </p>
       </form>
 
       <ToastContainer />
-
     </div>
   );
 };
