@@ -8,7 +8,16 @@ dotenv.config();
 const port = process.env.PORT;
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://main--storied-sable-0b88a3.netlify.app",
+      "https://nodejsday5-passwordresettask.onrender.com",
+      "http://localhost:5173",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 connectDB();
