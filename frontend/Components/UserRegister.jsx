@@ -110,6 +110,9 @@ const UserRegister = () => {
         >
           Register
         </button>
+        <Link to="/login" style={{ margin: "20px", color: "yellow" }}>
+          Already have an account?
+        </Link>
       </form>
       <ToastContainer />
     </div>
