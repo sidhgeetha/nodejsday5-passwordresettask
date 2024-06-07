@@ -62,7 +62,7 @@ const UserLogin = () => {
           borderRadius: "8px",
           padding: "60px",
           boxSizing: "border-box",
-          backgroundColor: "ef476f",
+          backgroundColor: "#ef476f",
           margin: "0 auto",
           marginTop: "100px",
           width: "90%",
@@ -100,7 +100,7 @@ const UserLogin = () => {
           style={{
             marginTop: "24px",
             width: "100px",
-            backgroundColor: "073b4c",
+            backgroundColor: "#073b4c",
             margin: "20px",
           }}
         >

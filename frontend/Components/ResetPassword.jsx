@@ -46,7 +46,7 @@ const ResetPassword = () => {
           borderRadius: "8px",
           padding: "60px",
           boxSizing: "border-box",
-          backgroundColor: "ef476f",
+          backgroundColor: "#ef476f",
           margin: "0 auto",
           marginTop: "50px",
           width: "100%",
@@ -69,7 +69,7 @@ const ResetPassword = () => {
           style={{
             marginTop: "24px",
             width: "200px",
-            backgroundColor: "073b4c",
+            backgroundColor: "#073b4c",
             margin: "20px",
           }}
         >
