@@ -36,3 +36,16 @@ https://jolly-gecko-68dd0a.netlify.app/register
 Backend URL:
 
 
+User register:
+![alt text](image.png)
+
+User login
+![alt text](image-1.png)
+
+Forgot password:
+![alt text](image-2.png)
+
+Setpassword
+![alt text](image-3.png)
+
+![alt text](image-4.png)
