@@ -11,7 +11,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://main--storied-sable-0b88a3.netlify.app",
+      "https://main--jolly-gecko-68dd0a.netlify.app",
       "https://nodejsday5-passwordresettask.onrender.com",
       "http://localhost:5173",
     ],
