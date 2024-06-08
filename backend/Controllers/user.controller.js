@@ -3,20 +3,19 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 
-import mail from "../Services/nodemail.js";
-
 import resetpassword from "../Services/resetpassword.js";
 
 dotenv.config();
 
 export const registerUser = async (req, res) => {
   try {
+    console.log("test");
     const { username, email, password } = req.body;
 
     const hashPassword = await bcrypt.hash(password, 10);
     console.log("hashpassword", hashPassword);
 
-    const newUser = new User({ username, email, password: hashPassword, role });
+    const newUser = new User({ username, email, password: hashPassword });
     await newUser.save();
     res.status(200).json({ message: "Register Successful", data: newUser });
     console.log("User saved successfully:", newUser);
@@ -75,7 +74,6 @@ export const getUser = async (req, res) => {
 export const setNewPassword = async (req, res) => {
   try {
     const { newPassword, token } = req.body;
-
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     const userId = decoded._id;
