@@ -18,7 +18,10 @@ const UserRegister = () => {
     const payloads = { username, email, password };
 
     await axios
-      .post("http://localhost:4000/api/user/register", payloads)
+      .post(
+        "https://nodejsday5-passwordresettask.onrender.com/api/user/register",
+        payloads
+      )
       .then((res) => {
         setResponseMsg(res.data.message);
         if (res.status === 200) {

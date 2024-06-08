@@ -29,7 +29,7 @@ const SetNewPassword = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/user/setnew-password",
+        "https://nodejsday5-passwordresettask.onrender.com/api/user/setnew-password",
         {
           newPassword,
           token,

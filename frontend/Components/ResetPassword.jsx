@@ -13,7 +13,10 @@ const ResetPassword = () => {
     const payload = { email };
 
     await axios
-      .post("http://localhost:4000/api/user/reset-password", payload)
+      .post(
+        "https://nodejsday5-passwordresettask.onrender.com/api/user/reset-password",
+        payload
+      )
       .then((res) => {
         setResponseMsg(res.data.message);
         toast.success("reset password link sent to your mailid Successfully", {
