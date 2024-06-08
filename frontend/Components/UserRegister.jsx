@@ -118,7 +118,6 @@ const UserRegister = () => {
           Already have an account?
         </Link>
       </form>
-      <ToastContainer />
     </div>
   );
 };

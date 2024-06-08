@@ -111,7 +111,6 @@ const SetNewPassword = () => {
           Confirm
         </button>
       </form>
-      <ToastContainer />
     </div>
   );
 };

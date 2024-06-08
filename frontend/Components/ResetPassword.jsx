@@ -79,7 +79,6 @@ const ResetPassword = () => {
           Send Reset Email
         </button>
       </form>
-      <ToastContainer />
     </div>
   );
 };
